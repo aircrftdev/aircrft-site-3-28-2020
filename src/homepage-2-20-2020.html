@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+      "pageTitle": "Aircrft"
+    })
+  </head>
+  <body>
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+    
+    <!-- NAVBAR
+    ================================================== -->
+    <!-- @@include("partials/navbar.html", {
+      "classList": "navbar-dark navbar-togglable fixed-top",
+      "type": "boxed"
+    }) -->
+  
+
+    <!-- WELCOME
+    ================================================== -->
+    <section class="py-10 py-md-14 bg-black" id="welcome">
+
+      <!-- Shape -->
+      <div class="shape shape-blur-3 svg-shim text-white">
+        @@include("assets/img/shapes/blurs/blur-3.svg")
+      </div>
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Badge -->
+            <span class="badge badge-pill badge-success-soft mb-3">
+                <span class="h6 text-uppercase">STARTUP WEBSITES</span>
+              </span>
+
+            <!-- Heading -->
+            <h1 class="display-2 font-weight-bold text-white">
+              aircrft/sites
+            </h1>
+            
+            <!-- Text -->
+            <p class="lead text-white mb-8">
+              Aircrft is enterprise-grade websites for startups.
+              </p>
+
+            <!-- Text 
+            <p class="lead text-white mb-8">
+              Aircrft sites are lightning fast, bulletproof secure and delightfully simple to work with.
+            </p> -->
+
+            <!-- Text -->
+            <p class="font-size-md text-gray-200 mb-9">
+                Lightening fast, bulletproof secure and simple to work with. Effortlessly deploy, manage, and scale your startups websites with a single tap. 
+              </p>
+
+            <!-- Button -->
+            <a href="aircrft.com" class="btn btn-white shadow lift">
+              Deploy your aircrft <i class="fe fe-feather d-none d-md-inline ml-3"></i>
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+        @@include("assets/img/shapes/curves/curve-1.svg")
+      </div>
+    </div>
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html", {
+      "classList": "bg-white"
+    })
+    
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+      
+  </body>
+</html>

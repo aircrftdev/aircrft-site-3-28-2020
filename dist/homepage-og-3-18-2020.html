@@ -1,0 +1,1005 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+
+    <!-- Map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+    <title>Aircrft</title>
+  </head>
+  <body>
+
+    <!-- MODALS
+    ================================================== -->
+    <!-- Example -->
+    <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+
+            <!-- Close -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+
+            <!-- Image -->
+            <div class="text-center">
+              <img src="../assets/img/illustrations/illustration-1.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
+            </div>
+
+            <!-- Heading -->
+            <h2 class="font-weight-bold text-center mb-1" id="modalExampleTitle">
+              Schedule a demo with us
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
+              We can help you solve company communication.
+            </p>
+
+            <!-- Form -->
+            <form>
+              <div class="row">
+                <div class="col-12 col-md-6">
+
+                  <!-- First name -->
+                  <div class="form-label-group">
+                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
+                    <label for="registrationFirstNameModal">First name</label>
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-6">
+
+                  <!-- Last name -->
+                  <div class="form-label-group">
+                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
+                    <label for="registrationLastNameModal">Last name</label>
+                  </div>
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+
+                  <!-- Email -->
+                  <div class="form-label-group">
+                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
+                    <label for="registrationEmailModal">Email</label>
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-6">
+
+                  <!-- Password -->
+                  <div class="form-label-group">
+                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
+                    <label for="registrationPasswordModal">Password</label>
+                  </div>
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+              
+                  <!-- Submit -->
+                  <button class="btn btn-block btn-primary mt-3 lift">
+                    Request a demo
+                  </button>
+
+                </div>
+              </div>
+            </form>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup: Horizontal  -->
+    <div class="modal fade" id="modalSignupHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row no-gutters">
+              <div class="col-12 col-md-6 bg-cover card-img-left" style="background-image: url(./assets/img/photos/photo-8.jpg);">
+
+                <!-- Image (placeholder) -->
+                <img src="./assets/img/photos/photo-8.jpg" alt="..." class="img-fluid d-md-none invisible">
+
+                <!-- Shape -->
+                <div class="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M116 0H51V172C76 384 0 517 0 517V690H116V0Z" fill="currentColor"/>
+                  </svg>
+                </div>
+
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card-body">
+
+                  <!-- Close -->
+                  <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+              
+                  <!-- Heading -->
+                  <h2 class="mb-0 font-weight-bold text-center" id="modalSignupHorizontalTitle">
+                    Sign Up
+                  </h2>
+
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Simplify your workflow in minutes.
+                  </p>
+
+                  <!-- Form -->
+                  <form class="mb-6">
+
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="sr-only" for="modalSignupHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSignupHorizontalEmail" placeholder="Your email">
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="sr-only" for="modalSignupHorizontalPassword">
+                        Create a password
+                      </label>
+                      <input type="password" class="form-control" id="modalSignupHorizontalPassword" placeholder="Create a password">
+                    </div>
+
+                    <!-- Submit -->
+                    <button class="btn btn-block btn-primary" type="submit">
+                      Sign up
+                    </button>
+
+                  </form>
+
+                  <!-- Text -->
+                  <p class="mb-0 font-size-sm text-center text-muted">
+                    Already have an account? <a href="./signin-illustration.html">Log in</a>.
+                  </p>
+
+                </div>
+              </div>
+
+            </div> <!-- / .row -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup: Vertical  -->
+    <div class="modal fade" id="modalSignupVertical" tabindex="-1" role="dialog" aria-labelledby="modalSignupVerticalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card">
+
+            <!-- Close -->
+            <button type="button" class="modal-close close text-white" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+
+            <!-- Image -->
+            <img src="./assets/img/photos/photo-7.jpg" alt="..." class="card-img-top">
+
+            <!-- Shape -->
+            <div class="position-relative">
+              <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0V480H2880V0H2160Z" fill="currentColor"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="card-body">
+
+              <!-- Heading -->
+              <h2 class="mb-0 font-weight-bold text-center" id="modalSignupVerticalTitle">
+                Sign Up
+              </h2>
+
+              <!-- Text -->
+              <p class="mb-6 text-center text-muted">
+                Simplify your workflow in minutes.
+              </p>
+
+              <!-- Form -->
+              <form class="mb-6">
+
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="sr-only" for="modalSignupVerticalEmail">
+                    Your email
+                  </label>
+                  <input type="email" class="form-control" id="modalSignupVerticalEmail" placeholder="Your email">
+                </div>
+
+                <!-- Password -->
+                <div class="form-group mb-5">
+                  <label class="sr-only" for="modalSignupVerticalPassword">
+                    Create a password
+                  </label>
+                  <input type="password" class="form-control" id="modalSignupVerticalPassword" placeholder="Create a password">
+                </div>
+
+                <!-- Submit -->
+                <button class="btn btn-block btn-primary" type="submit">
+                  Sign up
+                </button>
+
+              </form>
+
+              <!-- Text -->
+              <p class="mb-0 font-size-sm text-center text-muted">
+                Already have an account? <a href="./signin-illustration.html">Log in</a>.
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signin: Horizontal  -->
+    <div class="modal fade" id="modalSigninHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSigninHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row no-gutters">
+              <div class="col-12 col-md-6 bg-cover card-img-left" style="background-image: url(./assets/img/photos/photo-1.jpg);">
+
+                <!-- Image (placeholder) -->
+                <img src="./assets/img/photos/photo-1.jpg" alt="..." class="img-fluid d-md-none invisible">
+
+                <!-- Shape -->
+                <div class="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M116 0H51V172C76 384 0 517 0 517V690H116V0Z" fill="currentColor"/>
+                  </svg>
+                </div>
+
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card-body">
+
+                  <!-- Close -->
+                  <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+              
+                  <!-- Heading -->
+                  <h2 class="mb-0 font-weight-bold text-center" id="modalSigninHorizontalTitle">
+                    Sign In
+                  </h2>
+
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Simplify your workflow in minutes.
+                  </p>
+
+                  <!-- Form -->
+                  <form class="mb-6">
+
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="sr-only" for="modalSigninHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSigninHorizontalEmail" placeholder="Your email">
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="sr-only" for="modalSigninHorizontalPassword">
+                        Create a password
+                      </label>
+                      <input type="password" class="form-control" id="modalSigninHorizontalPassword" placeholder="Create a password">
+                    </div>
+
+                    <!-- Submit -->
+                    <button class="btn btn-block btn-primary" type="submit">
+                      Sign in
+                    </button>
+
+                  </form>
+
+                  <!-- Text -->
+                  <p class="mb-0 font-size-sm text-center text-muted">
+                    Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
+                  </p>
+
+                </div>
+              </div>
+
+            </div> <!-- / .row -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup: Vertical  -->
+    <div class="modal fade" id="modalSigninVertical" tabindex="-1" role="dialog" aria-labelledby="modalSigninVerticalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card">
+
+            <!-- Close -->
+            <button type="button" class="modal-close close text-white" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+
+            <!-- Image -->
+            <img src="./assets/img/photos/photo-21.jpg" alt="..." class="card-img-top">
+
+            <!-- Shape -->
+            <div class="position-relative">
+              <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0V480H2880V0H2160Z" fill="currentColor"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="card-body">
+
+              <!-- Heading -->
+              <h2 class="mb-0 font-weight-bold text-center" id="modalSigninVerticalTitle">
+                Sign In
+              </h2>
+
+              <!-- Text -->
+              <p class="mb-6 text-center text-muted">
+                Simplify your workflow in minutes.
+              </p>
+
+              <!-- Form -->
+              <form class="mb-6">
+
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="sr-only" for="modalSigninVerticalEmail">
+                    Your email
+                  </label>
+                  <input type="email" class="form-control" id="modalSigninVerticalEmail" placeholder="Your email">
+                </div>
+
+                <!-- Password -->
+                <div class="form-group mb-5">
+                  <label class="sr-only" for="modalSigninVerticalPassword">
+                    Create a password
+                  </label>
+                  <input type="password" class="form-control" id="modalSigninVerticalPassword" placeholder="Create a password">
+                </div>
+
+                <!-- Submit -->
+                <button class="btn btn-block btn-primary" type="submit">
+                  Sign in
+                </button>
+
+              </form>
+
+              <!-- Text -->
+              <p class="mb-0 font-size-sm text-center text-muted">
+                Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- NAVBAR
+    ================================================== -->
+    
+  
+
+    <!-- WELCOME
+    ================================================== -->
+    <section class="py-10 py-md-14 bg-black" id="welcome">
+
+      <!-- Shape -->
+      <div class="shape shape-blur-3 svg-shim text-white">
+        <svg viewBox="0 0 1738 487" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0H1420.92C1420.92 0 2134.35 457.505 1420.92 485.868C707.502 514.231 0 0 0 0Z" fill="url(#paint0_linear)"/>
+          <defs>
+            <linearGradient id="paint0_linear" x1="0" y1="0" x2="1049.98" y2="912.68" gradientUnits="userSpaceOnUse">
+            <stop stop-color="currentColor" stop-opacity="0.075"/>
+            <stop offset="1" stop-color="currentColor" stop-opacity="0"/>
+          </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Badge -->
+            <span class="badge badge-pill badge-success-soft mb-3">
+                <span class="h6 text-uppercase">CONSCIOUS STARTUPS</span>
+              </span> 
+
+            <!-- Badge 
+            <span class="badge badge-pill badge-success-soft mb-3">
+                <span class="h6 text-uppercase">AIRCRFT FLIGHTDECK</span>
+              </span> -->
+
+            <!-- Text 
+            <p class="lead text-white mb-8">
+              A better way to scale.
+            </p> -->
+
+            <!-- Heading -->
+            <h1 class="display-2 font-weight-bold text-white">
+              aircrft/<span class="display-3 success-soft mb-3">startups</span>
+            </h1>
+            
+            <!-- Badge 
+            <span class="badge badge-pill badge-success-soft mb-3">
+              <span class="h6 text-uppercase">CONSCIOUS STARTUP OPERATING SYSTEM</span>
+            </span> -->
+            
+            <!-- Text 
+            <p class="lead text-white mb-8">
+              CONSCIOUS BUSINESS + COMPASSIONATE MANAGEMENT
+              </p> -->
+
+            <!-- Badge 
+            <span class="badge badge-pill badge-success-soft mb-3">
+                <span class="h6 text-uppercase">CONSCIOUS STARTUPS OPERATING SYSTEM</span>
+              </span> -->
+            
+            <!-- Text -->
+            <p class="lead text-white mb-8">
+              A better way to scale.
+              </p> 
+
+            <!-- Text -->
+            <p class="lead text-white mb-8">
+              Aircrft enables you to craft and inspire your startup's drumbeat of culture, mission, and values.
+              </p>
+
+            <!-- Text 
+            <p class="lead text-white mb-8">
+              A better way to scale.
+             </p> -->
+
+            <!-- Text 
+            <p class="lead text--gray-200 mb-6 mb-md-0">
+              Aircrft is a guidance and navigation system that fuels your startup with the same conscious business and compassionate management strategies, techniques, tools, and best practices used by the world's top tech companies. 
+             </p> -->
+
+
+              <!-- Text 
+            <p class="font-size-mb text-gray-200 mb-9">
+              Aircft FlightDeck is a collaboration hub that can help you and your team work together on leading, guiding, and tracking your startup on it's northstar mission.
+              </p> -->
+
+            <!-- Text -->
+            <p class="font-size-mb text-gray-200 mb-9">
+              Aircrft FlightDeck is a platform and collaboration hub that fuels your startup with the same conscious business and compassionate management strategies, techniques, tools, and best practices used by the world's top tech companies. 
+              </p> 
+              
+            <!-- Text 
+            <p class="font-size-mb text-gray-200 mb-9">
+              Aircrft is a conscious business + compassionate management operating system for founders and their teams. 
+              </p> -->
+
+            <!-- Text 
+            <p class="font-size-mb text-gray-200 mb-9">
+               Fuels your startup with the same strategies, techniques, tools, and best practices used by the world's top tech companies.
+               </p> -->
+            
+            <!-- Text 
+            <p class="lead text-primary mb-6 mb-md-0">
+              Aircrft FlightDeck is a platform and collaboration hub thats fuels your startup with the same conscious business and compassionate management strategies, techniques, tools, and best practices used by the world's top tech companies. 
+             </p> -->     
+
+              <!-- Text 
+            <p class="font-size-mb text-gray-200 mb-9">
+               Lead your startup's culture, mission, and values powered with conscious business and compassionate management strategies, techniques, tools, and best practices. 
+               </p> -->
+
+            <!-- Text 
+            <p class="font-size-mb text-gray-200 mb-9">
+              Be remarkable. Be undeniable. Be a conscious startup.
+              </p> -->
+
+              <!-- Text 
+            <p class="font-size-mb text-gray-200 mb-9">
+              Attract top talent, deliver the highest 
+              value solutions to your users, and scale a world-class vibrant company culture. 
+              </p> -->
+
+
+              <!-- Text 
+            <p class="font-size-mb text-gray-200 mb-9">
+              Aircrft for startups is a conscious business guidance and 
+              compassionate communication navigation system empowering 
+              you and your team with <br>
+              strategies, tools and best practices.
+              </p> -->
+
+            <!-- Text 
+            <p class="lead text-white mb-8">
+              From lift-off to escape velocity, Aircrft fuels your startups Northstar flight plan.
+              </p> -->
+              
+              <!-- ”From lift-off to escape velocity Aircrft helps early stage start to the worlds top tech companies 
+              with a effective framework for navigating and staying on course to their Northstar desitnation."
+              
+              founders and their team deploy/navigate/scale a conscious business startup.
+              Aircrft is a platform for early-stage startups to manage and scale a conscious business and grow a company culture built on a foundation of compassionate communication strategies.
+              From lift-off to escape velocity, fuel your startups Northstar flight path.
+              </p> -->
+
+              <!-- Button -->
+            <a href="https://nostalgic-khorana-0abcdf.netlify.com/" class="btn btn-white shadow lift">
+                Craft your drumbeat<i class="fe fe-feather d-none d-md-inline ml-3"></i>
+              </a>
+
+            <!-- Text 
+            <p class="lead text-white mb-8">
+              A better way to scale.
+              </p> -->
+
+            <!-- Button 
+            <a href="https://aircrft.com/" class="btn btn-white shadow lift">
+              Create your FREE flight plan <i class="fe fe-feather d-none d-md-inline ml-3"></i>
+            </a> -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- PROCESS 
+    ================================================== -->
+    <section class="pt-8 pt-md-11">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-md-6"> 
+            
+            
+            <!-- Preheading -->
+            <h6 class="text-uppercase text-primary font-weight-bold">
+              Process
+            </h6> 
+              
+            <!-- Heading -->
+            <h2>
+              How it works
+            </h2> 
+
+            <!-- Badge -->
+            <span class="badge badge-pill badge-primary-soft mb-3">
+                <span class="h6 text-uppercase">CONSCIOUS BUSINESS</span>
+              </span> 
+
+            <!-- Badge -->
+            <span class="badge badge-pill badge-success-soft mb-3">
+                <span class="h6 text-uppercase">COMPASSIONATE MANAGEMENT</span>
+              </span> 
+
+            <!-- Text 
+            <p class="font-size-mb text-gray-200 mb-9">
+              Aircft FlightDeck is a platform and collaboration hub that can help you and your team work together effectively, lead, inspire and scale a vibrant compassionate company culture.
+              </p> -->              
+            
+              <!-- Text -->
+            <p class="lead text-primary mb-6 mb-md-0">
+              Aircft FlightDeck is a platform and collaboration hub that can help you and your team work together effectively. Lead, inspire and scale a conscious, compassionate, and vibrant company culture.
+             </p> 
+
+            <!-- Text 
+            <p class="lead text-primary mb-6 mb-md-0">
+              Aircrft is a guidance
+               and navigation system that fuels your startup with the same conscious business and compassionate management strategies, techniques, tools, and best practices used by the world's top tech companies. 
+             </p> -->
+
+             <!-- Text 
+            <p class="lead text-muted mb-6 mb-md-0">
+              Sets the stage for a vibrant compassionate company culture that attracts great people. Movivates your team to the drumbeat of your mission and values. 
+             </p> -->
+
+         <!-- </div> -->
+          <div class="col-12 col-md-6 col-xl-5">
+
+            <div class="row no-gutters">
+              <div class="col-4"> 
+                
+                <!-- Image 
+                <div class="w-150 mt-9 p-1 bg-white shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                  <img src="assets/img/photos/photo-13.jpg" class="img-fluid" alt="...">
+                </div> -->
+
+             <!-- </div>
+              <div class="col-4"> -->
+                
+                <!-- Image 
+                <div class="w-150 p-1 bg-white shadow-lg" data-aos="fade-up">
+                  <img src="assets/img/photos/photo-14.jpg" class="img-fluid" alt="...">
+                </div> -->
+
+             <!-- </div>
+              <div class="col-4 position-relative"> -->
+                
+                <!-- Image 
+                <div class="w-150 mt-11 float-right p-1 bg-white shadow-lg" data-aos="fade-up" data-aos-delay="150">
+                  <img src="assets/img/photos/photo-15.jpg" class="img-fluid" alt="...">
+                </div> -->
+
+              </div>
+            </div> <!-- / .row -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- STEPS 
+    ================================================== -->
+    <section class="pt-8 pb-9 pt-md-11 pb-md-13">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="row">
+              <div class="col-auto col-md-12"> 
+                
+                <!-- Step -->
+                <div class="row no-gutters align-items-center mb-md-5">
+                  <div class="col-auto">
+                    
+                    <a href="#!" class="btn btn-sm btn-rounded-circle btn-gray-400 disabled opacity-1">
+                      <span>1</span>
+                    </a> 
+
+                  </div>
+                  <div class="col">
+                    
+                    <hr class="d-none d-md-block w-130">
+
+                  </div>
+                </div> <!-- / .row -->
+
+              </div>
+              <div class="col col-md-12 ml-n5 ml-md-0">
+                
+                <!-- Heading -->
+                <h3>
+                  Culture Deck
+                </h3> 
+
+                <!-- Text -->
+                <p class="text-primary mb-6 mb-md-0">
+                  Craft, collaborate on, and publish your startup's Culture Deck.
+                  Share your purpose, your why, mission, and values. 
+                  </p> 
+
+              </div>
+            </div> <!-- / .row -->
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="row">
+              <div class="col-auto col-md-12">
+                
+                <!-- Step -->
+                <div class="row no-gutters align-items-center mb-md-5">
+                  <div class="col-auto">
+                    
+                    <a href="#!" class="btn btn-sm btn-rounded-circle btn-gray-400 disabled opacity-1">
+                      <span>2</span>
+                    </a> 
+
+                  </div>
+                  <div class="col">
+                    
+                    <hr class="d-none d-md-block w-130">
+
+                  </div>
+                </div> <!-- / .row -->
+
+              </div>
+              <div class="col col-md-12 ml-n5 ml-md-0">
+                
+                <!-- Heading -->
+                <h3>
+                  Rocket Fuel
+                </h3> 
+
+                <!-- Text -->
+                <p class="text-primary mb-6 mb-md-0">
+                  Fuels your startup with the same conscious business and compassionate management strategies, techniques, tools, and best practices used by the world's top tech companies.
+                  </p>
+
+              </div>
+            </div> <!-- / .row -->
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="row">
+              <div class="col-auto col-md-12">
+                
+                <!-- Step -->
+                <div class="row no-gutters align-items-center mb-md-5">
+                  <div class="col-auto">
+                    
+                    <a href="#!" class="btn btn-sm btn-rounded-circle btn-gray-400 disabled opacity-1">
+                      <span>3</span>
+                    </a> 
+
+                  </div>
+                </div> <!-- / .row -->
+
+              </div>
+              <div class="col col-md-12 ml-n5 ml-md-0">
+                
+                <!-- Heading -->
+                <h3>
+                  Blast-off!
+                </h3> 
+
+                <!-- Text -->
+                <p class="text-primary mb-0">
+                  Launch Aircrft FlightDeck: your startup's mission control console for attracting top talent, delivering the highest value solutions to your users, and scaling a world-class vibrant company culture.
+                  </p> 
+
+              </div>
+            </div> <!-- / .row -->
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="py-8 py-md-11 bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+        
+            <!-- Brand -->
+            <img src="./assets/img/brand.svg" alt="..." class="footer-brand img-fluid mb-2">
+
+            <!-- Text -->
+            <p class="text-gray-700 mb-2">
+              A better way to scale.
+            </p>
+
+            <!-- Social -->
+            <!--<ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+              <li class="list-inline-item list-social-item mr-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/instagram.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item mr-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item mr-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/pinterest.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+            </ul>-->
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-2"> 
+        
+            <!-- Heading -->
+            <!-- <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Products
+            </h6> -->
+
+            <!-- List -->
+            <!-- <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Page Builder
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  UI Kit
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Styleguide
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-2"> -->
+        
+            <!-- Heading -->
+            <!-- <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Services
+            </h6> -->
+
+            <!-- List -->
+            <!-- <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Pagebuilder
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-reset">
+                  UI Kit
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0"> -->
+        
+            <!-- Heading -->
+            <!-- <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Connect
+            </h6> -->
+
+            <!-- List -->
+            <!-- <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Page Builder
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  UI Kit
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Styleguide
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-2"> -->
+        
+            <!-- Heading -->
+            <!-- <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Legal
+            </h6> -->
+
+            <!-- List -->
+            <!-- <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-reset">
+                  Pagebuilder
+                </a>
+              </li> -->
+            </ul>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </footer>
+    
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="./assets/libs/aos/dist/aos.js"></script>
+    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+      
+  </body>
+</html>
